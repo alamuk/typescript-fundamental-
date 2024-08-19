@@ -57,8 +57,9 @@ function add1(a: number, b: number): void {
 }
 // return type - number
 function add2(a: number, b: number): number {
-  const result = a + b;
-  return result;
+  // const result = a + b;
+  // return result;
+  return a + b;
 }
 
 /// function in the arguments => return type.
@@ -78,7 +79,7 @@ calculate(2, 3, add2);
 // how store in a variable:
 // type AddFn = (a: number, b: number) => number;   // function type
 // type StringOrNumber = string | number // union type
-////  object type with type keyword ////
+//// object type with type keyword ////
 type Users = {
   name: string;
   age: number;
@@ -175,7 +176,7 @@ let role: Role; // 'admin' | 'user' | 'editor';
 function performAction(action: string, role: Role) {
   if (role === 'admin' && typeof action === 'string') {
     // typeof = operator
-    // run my action
+    // runs my action
   }
 }
 
@@ -183,7 +184,7 @@ function performAction(action: string, role: Role) {
 function performAction1(action: string | number, role: Role) {
   if (role === 'admin' && typeof action === 'string') {
     // typeof = operator
-    // run my action
+    // runs my action
   }
 }
 
